@@ -1,0 +1,30 @@
+{
+  "linkedinSkanerApp": {
+    "leader": {
+      "home": {
+        "title": "Leader",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Leader",
+        "createOrEditLabel": "Dodaj lub edytuj: Leader",
+        "notFound": "No Leaders found"
+      },
+      "created": "Utworzono nowy obiekt typu Leader z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Leader z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Leader z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Leader {{ id }}?"
+      },
+      "detail": {
+        "title": "Leader"
+      },
+      "id": "ID",
+      "url": "Url",
+      "title": "Title",
+      "description": "Description",
+      "location": "Location",
+      "isActive": "Is Active",
+      "created": "Created",
+      "updated": "Updated"
+    }
+  }
+}

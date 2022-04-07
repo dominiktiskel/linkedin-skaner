@@ -1,0 +1,30 @@
+{
+  "linkedinSkanerApp": {
+    "leader": {
+      "home": {
+        "title": "Leaders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Leader",
+        "createOrEditLabel": "Create or edit a Leader",
+        "notFound": "No Leaders found"
+      },
+      "created": "A new Leader is created with identifier {{ param }}",
+      "updated": "A Leader is updated with identifier {{ param }}",
+      "deleted": "A Leader is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Leader {{ id }}?"
+      },
+      "detail": {
+        "title": "Leader"
+      },
+      "id": "ID",
+      "url": "Url",
+      "title": "Title",
+      "description": "Description",
+      "location": "Location",
+      "isActive": "Is Active",
+      "created": "Created",
+      "updated": "Updated"
+    }
+  }
+}

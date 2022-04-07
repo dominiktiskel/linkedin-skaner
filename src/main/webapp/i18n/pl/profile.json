@@ -1,0 +1,35 @@
+{
+  "linkedinSkanerApp": {
+    "profile": {
+      "home": {
+        "title": "Profile",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Profile",
+        "createOrEditLabel": "Dodaj lub edytuj: Profile",
+        "notFound": "No Profiles found"
+      },
+      "created": "Utworzono nowy obiekt typu Profile z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Profile z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Profile z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Profile"
+      },
+      "id": "ID",
+      "url": "Url",
+      "businessTarget": "Business Target",
+      "targetWords": "Target Words",
+      "blockedWords": "Blocked Words",
+      "title": "Title",
+      "description": "Description",
+      "location": "Location",
+      "isActive": "Is Active",
+      "created": "Created",
+      "updated": "Updated",
+      "leader": "Leader",
+      "comapign": "Comapign"
+    }
+  }
+}
