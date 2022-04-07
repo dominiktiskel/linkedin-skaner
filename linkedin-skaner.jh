@@ -1,0 +1,47 @@
+
+
+
+entity Leader {
+  url String maxlength (2000),
+  title String,
+  description String,
+  location String,
+  isActive Boolean required,
+  created ZonedDateTime,
+  updated ZonedDateTime
+}
+
+entity Profile {
+  url String maxlength (2000) required,
+  businessTarget Boolean required,
+  targetWords String maxlength (2000),
+  blockedWords String maxlength (2000),
+  title String,
+  description String,
+  location String,
+  isActive Boolean required,
+  created ZonedDateTime,
+  updated ZonedDateTime
+}
+
+entity Campaign {
+  title String,
+  message TextBlob required,
+  description String,
+  isActive Boolean required,
+  created ZonedDateTime,
+  updated ZonedDateTime
+}
+
+relationship ManyToMany {
+	Profile{comapign} to Campaign{profile}
+}
+
+relationship ManyToOne {
+    Profile{leader} to Leader,
+    Profile{leader} to Leader
+}
+
+dto * with mapstruct
+paginate * with pagination
+service * with serviceImpl

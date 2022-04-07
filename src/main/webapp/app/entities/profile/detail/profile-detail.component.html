@@ -1,0 +1,81 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="profile">
+      <h2 data-cy="profileDetailsHeading"><span jhiTranslate="linkedinSkanerApp.profile.detail.title">Profile</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ profile.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.url">Url</span></dt>
+        <dd>
+          <span>{{ profile.url }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.businessTarget">Business Target</span></dt>
+        <dd>
+          <span>{{ profile.businessTarget }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.targetWords">Target Words</span></dt>
+        <dd>
+          <span>{{ profile.targetWords }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.blockedWords">Blocked Words</span></dt>
+        <dd>
+          <span>{{ profile.blockedWords }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.title">Title</span></dt>
+        <dd>
+          <span>{{ profile.title }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.description">Description</span></dt>
+        <dd>
+          <span>{{ profile.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.location">Location</span></dt>
+        <dd>
+          <span>{{ profile.location }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.isActive">Is Active</span></dt>
+        <dd>
+          <span>{{ profile.isActive }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.created">Created</span></dt>
+        <dd>
+          <span>{{ profile.created | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.updated">Updated</span></dt>
+        <dd>
+          <span>{{ profile.updated | formatMediumDatetime }}</span>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.leader">Leader</span></dt>
+        <dd>
+          <div *ngIf="profile.leader">
+            <a [routerLink]="['/leader', profile.leader?.id, 'view']">{{ profile.leader?.id }}</a>
+          </div>
+        </dd>
+        <dt><span jhiTranslate="linkedinSkanerApp.profile.comapign">Comapign</span></dt>
+        <dd>
+          <span *ngFor="let comapign of profile.comapigns; let last = last">
+            <a [routerLink]="['/campaign', comapign?.id, 'view']">{{ comapign.id }}</a
+            >{{ last ? '' : ', ' }}
+          </span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/profile', profile.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

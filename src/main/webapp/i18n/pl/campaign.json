@@ -1,0 +1,30 @@
+{
+  "linkedinSkanerApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaign",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Dodaj Campaign",
+        "createOrEditLabel": "Dodaj lub edytuj: Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "Utworzono nowy obiekt typu Campaign z identyfikatorem {{ param }}",
+      "updated": "Uaktualniono obiekt typu Campaign z identyfikatorem {{ param }}",
+      "deleted": "Usunięto obiekt typu Campaign z identyfikatorem {{ param }}",
+      "delete": {
+        "question": "Czy na pewno chcesz usunąć Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "title": "Title",
+      "message": "Message",
+      "description": "Description",
+      "isActive": "Is Active",
+      "created": "Created",
+      "updated": "Updated",
+      "profile": "Profile"
+    }
+  }
+}
